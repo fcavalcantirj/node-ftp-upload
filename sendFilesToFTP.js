@@ -28,6 +28,7 @@ dir.readFiles('/Users/fcavalcanti/Desktop/betapostcrawler/', {
           if (err) throw err;
           c.end();
         });
+        fs.unlink(fileNames[counter]);
         counter = counter +1;
     });
   });
